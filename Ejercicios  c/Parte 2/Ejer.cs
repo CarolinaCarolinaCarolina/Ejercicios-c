@@ -142,7 +142,7 @@ namespace Ejercicios__c.Parte_2
                 double interes = CreditoEmpresa + (CreditoEmpresa * 0.15);
                 Console.WriteLine($"El valor que deberá pagar la empresa es: {PagarEllos}\n" +
                     $"El valor que deberán prestar al banco será de: {PrestamoBanco}\n" +
-                    $"El valor que deberán solicitas como credio a la empresa será de: {CreditoEmpresa}" +
+                    $"El valor que deberán solicitas como credio a la empresa será de: {CreditoEmpresa}\n" +
                     $"El valor a pagar a la empresa con los intereses sería de: {interes}");
             }else if (valor< 5000000)
             {
@@ -150,7 +150,7 @@ namespace Ejercicios__c.Parte_2
                 double CreditoEmpresa = valor * 0.30;
                 double interes = CreditoEmpresa + (CreditoEmpresa * 0.15);
                 Console.WriteLine($"El valor que deberá pagar la empresa es: {PagarEllos}\n" +
-                    $"El valor que deberán solicitar como credio a la empresa será de: {CreditoEmpresa}" +
+                    $"El valor que deberán solicitar como credio a la empresa será de: {CreditoEmpresa}\n" +
                     $"El vaor a pagar a la empresa con los intereses sería de: {interes}");
             }
         }
@@ -179,18 +179,18 @@ namespace Ejercicios__c.Parte_2
                 double CuotaInicial = (ValorVivienda * 0.15);
                 double CuotaSinInteres = (ValorVivienda - CuotaInicial) / 120;
                 double CuotaConInteres = CuotaSinInteres + (CuotaSinInteres * 0.02);
-                Console.WriteLine($"El valor de la vivienda es: {ValorVivienda}" +
-                    $"El valor de la cuota inicial es: {CuotaInicial}" +
-                    $"El valor de la cuota sin interes es: {CuotaSinInteres}" +
+                Console.WriteLine($"El valor de la vivienda es: {ValorVivienda}\n" +
+                    $"El valor de la cuota inicial es: {CuotaInicial}\n" +
+                    $"El valor de la cuota sin interes es: {CuotaSinInteres}\n" +
                     $"El valor de la cuota con interes es: {CuotaConInteres}");
             }else if (ingresos< 1200000)
             {
                 double CuotaInicial = (ValorVivienda * 0.30);
                 double CuotaSinInteres = (ValorVivienda - CuotaInicial) / 84;
                 double CuotaConInteres = CuotaSinInteres + (CuotaSinInteres * 0.01);
-                Console.WriteLine($"El valor de la vivienda es: {ValorVivienda}" +
-                   $"El valor de la cuota inicial es: {CuotaInicial}" +
-                   $"El valor de la cuota sin interes es: {CuotaSinInteres}" +
+                Console.WriteLine($"El valor de la vivienda es: {ValorVivienda}\n" +
+                   $"El valor de la cuota inicial es: {CuotaInicial}\n" +
+                   $"El valor de la cuota sin interes es: {CuotaSinInteres}\n" +
                    $"El valor de la cuota con interes es: {CuotaConInteres}");
             }
         }

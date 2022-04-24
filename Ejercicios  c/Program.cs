@@ -17,7 +17,7 @@ namespace Ejercicios__c
             {
                 switch (opcion)
                 {
-                    case 1:
+                    case 2:
                         Ejer e1 = new Ejer();
                         e1.Ejecucion();
                         break;
