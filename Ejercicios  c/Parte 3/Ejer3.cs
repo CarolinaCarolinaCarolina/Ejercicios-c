@@ -20,7 +20,7 @@ namespace Ejercicios__c.Parte_3
                         Ejer1();
                         break;
                     case 2:
-                        //Ejer2();
+                        Ejer2();
                         break;
                     case 3:
                         //Ejer3();
@@ -57,6 +57,26 @@ namespace Ejercicios__c.Parte_3
 
             }//cierre del for1
 
+        }
+        public static void Ejer2()
+        {
+            
+            Console.WriteLine("Ingrese la cantidad de sueldos");
+            int cantidad = int.Parse(Console.ReadLine());
+            int[] sueldos = new int[cantidad];
+            int max = sueldos[0];
+            for(int j = 0; j < cantidad; j++)
+            {
+                Console.WriteLine("Ingrese el sueldo: " + j);
+                sueldos[j] = int.Parse(Console.ReadLine());
+            }
+            for (int i = 0; i < cantidad; i++){
+                if (sueldos[i] > max)
+                {
+                    max = sueldos[i];
+                }
+            }
+            Console.WriteLine("El sueldo maximo es: " + max);
         }
     }
 }
